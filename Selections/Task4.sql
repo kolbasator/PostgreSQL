@@ -1,0 +1,3 @@
+SELECT first_name,last_name
+FROM clients
+WHERE LENGTH(first_name) + 3 <= LENGTH(last_name)                                                                                                                                                                                                                                                                                                                                  
