@@ -1,0 +1,3 @@
+SELECT title
+FROM movies
+ORDER BY LENGTH(title) ASC
