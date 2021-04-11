@@ -1,0 +1,4 @@
+SELECT DISTINCT copy_id 
+FROM copies
+NATURAL JOIN movies
+WHERE year=1984

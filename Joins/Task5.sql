@@ -1,0 +1,3 @@
+SELECT date_of_rental,date_of_return,last_name
+FROM rentals
+NATURAL JOIN clients
