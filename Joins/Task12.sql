@@ -1,0 +1,2 @@
+SELECT DISTINCT title FROM movies m,clients c,rentals r,copies cp
+WHERE c. client_id = r. client_id AND cp. copy_id = r. copy_id AND m. movie_id = cp. movie_id AND date_of_rental BETWEEN '2005-07-15' AND '2005-07-25'

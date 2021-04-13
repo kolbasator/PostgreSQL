@@ -1,2 +1,5 @@
-SELECT title,year FROM movies m,clients c,rentals r,copies cp
-WHERE c. client_id = r. client_id AND cp. copy_id = r. copy_id AND m. movie_id = cp. movie_id AND c. first_name = 'Gary'
+SELECT first_name,last_name
+FROM rentals r
+JOIN clients c ON c. client_id=r. client_id
+ORDER BY date_of_rental ASC
+LIMIT 1
