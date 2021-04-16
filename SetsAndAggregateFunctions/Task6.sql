@@ -1,0 +1,3 @@
+SELECT price FROM movies
+ORDER BY price DESC
+LIMIT 1
