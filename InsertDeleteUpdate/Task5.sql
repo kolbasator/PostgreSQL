@@ -1,0 +1,2 @@
+DELETE FROM movies
+WHERE movie_id IN (SELECT movie_id FROM (SELECT m.movie_id,act.first_name,act.last_name FROM movies m JOIN starring s ON s.movie_id=m.movie_id JOIN actors act ON act.actor_id=s.actor_id) AS data WHERE first_name=NULL AND last_name=null)
