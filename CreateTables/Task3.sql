@@ -1,0 +1,4 @@
+ALTER TABLE books ADD COLUMN publisher VARCHAR(300);
+
+ALTER TABLE books
+  ALTER COLUMN publisher SET DEFAULT 'Unknown'
