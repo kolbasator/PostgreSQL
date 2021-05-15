@@ -1,0 +1,1 @@
+SELECT invoice_id,pesel FROM invoices WHERE amount IS NULL
